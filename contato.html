@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Contato</title>
+</head>
+<body>
+  <!-- Barra de navegação -->
+    <ul>
+        <li><a href="index.html">Sobre</a></li>
+        <li><a href="Portfolio.html">Portfólio</a></li>
+        <li><a href="formacao.html">Formação</a></li>
+        <li><a href="contato.html">Contato</a></li>
+    </ul>
+    <!-- Formulário para entrar em contato -->
+    <form class="form" action="#" id="email-form">
+        <div><h1>Entre em contato</h1></div>
+      <fieldset class="form-fields">
+        <div class="field-name-email">
+          <label for="nome">
+            <input name="nome" id="nome" type="text" placeholder="Seu Nome" />
+          </label>
+
+          <label for="email">
+            <input
+              name="email"
+              id="email"
+              type="email"
+              placeholder="Seu E-mail"
+            />
+          </label>
+        </div>
+        <div>
+          <label for="mensagem">
+            <textarea
+              name="mensagem"
+              id="mensagem"
+              type="text"
+              placeholder="Sua Mensagem"
+            ></textarea>
+          </label>
+        </div>
+        <div class="btn">
+          <button id="emailButton">Enviar</button>
+        </div>
+      </fieldset>
+    </form>
+    <!-- Link para o javascript -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/sendmail.js"></script>
+</body>
+</html>
